@@ -22,9 +22,9 @@ To run the file, run the following in the folder directory if using JupyterLab i
 ```
 jupyter-lab
 ```
+------------
 
 Each task has its own separate folder structure with the relevant JupyterLab / Jupyter Notebook and python scripts. 
-------------
 
 ## Credits and References
 
