@@ -22,6 +22,37 @@ def import_data(file):
     return data
 
 
+def import_full_data(file):
+    """
+    :param file: file to import
+    :return: float tuple array containing columns of the input file
+    """
+    data = []
+    with open(file) as f:
+        # skip first line
+        f.readline()
+        for line in f.readlines():
+            elem0, elem1, elem2, elem3, elem4, elem5, elem6, elem7, elem8, elem9 = line.split()
+            x1 = str(elem1)
+            x2 = x1.replace(',', '.')
+            y1 = str(elem2)
+            y2 = y1.replace(',', '.')
+            z1 = str(elem3)
+            z2 = z1.replace(',', '.')
+            x1 = str(elem1)
+            x2 = x1.replace(',', '.')
+            x1 = str(elem1)
+            x2 = x1.replace(',', '.')
+            x1 = str(elem1)
+            x2 = x1.replace(',', '.')
+            x1 = str(elem1)
+            x2 = x1.replace(',', '.')
+            x1 = str(elem1)
+            x2 = x1.replace(',', '.')
+
+            data.append((int(x2), int(y2), int(z2)))
+    return data
+
 def create_delay_embedding(data, starting_index, num_delays):
     """
     :param data: input data
